@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+    body{
+        background-color: rgba(0, 0, 0, 0.452);
+    }
+    *{
+        font-size: 15px;
+        font-family:  'Orbitron', sans-serif;
+    }
+    input{
+        display: block;
+    }
+    input[type="radio"],input[type="checkbox"],label[for="TnC"]{
+        display: inline;
+    }
+    input[type="text"],input[type="password"]{
+        width: 95%;
+        border: none;
+        border-bottom: 2px solid gray;
+    }
+    #tnc label,#tnc a,input[type="checkbox"]{
+        margin: auto;
+        font-size: 12px;
+    }
+    main *{
+        padding: 2px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    main{
+        margin: auto;
+        border: 2px ridge gray;
+        width: 34vw;
+        position: absolute;
+        top:100px;
+        left: 35%;
+        background-color: rgb(200, 200, 200);
+    }
+    @media screen and (max-width:1150px) {
+        main{
+            left:5%;
+            width: 90vw;
+        }
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <form onsubmit="backto()">
+            <input type="text" id="Uid" placeholder="Enter your USER ID" required>
+            <input type="password" id="pwd" placeholder="Enter your password" required>
+            <span>You are signing in as a:</span>
+            <input type="radio" name="proff" id="stu" value="Student" required>
+            <label for="stu">Student</label>
+            <input type="radio" name="proff" id="teachr" value="Teacher" required>
+            <label for="teachr">Teacher</label>
+            <input type="radio" name="proff" id="parnt" value="Parent" required>
+            <label for="parnt">Parent</label>
+            <div id="tnc">
+                <input type="checkbox" name="tnc" id="TnC" required>
+                <label for="TnC">By signing in you agree with our <a href="#">Terms and Conditions</a></label>
+            </div>
+            <input type="submit" value="Sign In">
+        </form>
+    </main>
+</body>
+<script>
+    function backto(){
+        // window.open("index.html");
+        window.close();
+    }
+</script>
+</html>

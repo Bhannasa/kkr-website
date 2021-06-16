@@ -164,13 +164,14 @@ body {
     background-color: rgb(65, 65, 133);
     border-radius: 20px;
     padding: 16px;
-    width: 15%;
+    width: 13.5%;
     text-align: center;
     text-decoration: none;
     color: white;
     transition-property: transform;
     transition-duration: 0.5s;
 }
+
 
 .navbar a:hover {
     transform: scale(1.1);
@@ -293,18 +294,26 @@ body {
         font-size: 40px;
     }
     .placements-and-nirf {
+        font-size:30px;
         flex-direction: column;
         align-items: center;
     }
     .stats {
-        width: 100vw;
+        width: 95vw;
+        padding:10px
     }
     .pl-and-nirf-year {
-        width: 100%;
+        width: 90%;
         text-align: center;
     }
     .college-name {
         font-size: 50px;
+    }
+    .navbar>a{
+        width: 85%;
+        margin: 2px auto;
+        font-size: 25px;
+        padding:5px;
     }
     .onmap {
         height: 120vw;
@@ -315,20 +324,34 @@ body {
         width: 100vw;
     }
     .image-section-main {
-        width: 100vw;
+        width: 85vw;
     }
     .image-section {
-        width: 500vw;
+        width: 425vw;
+    }
+    .heading,.some-lines-heading{
+        font-size: 35px;
     }
     .images {
-        width: 100vw;
+        height:80vw;
+        width: 85vw;
     }
     .img-container {
         padding: 2px;
     }
+    .some-lines{
+        width: 95%;
+    }
+    .some-lines-part{
+        font-size: 18px;
+    }
+    .footer-end{
+        font-size: 9px;
+    }
+
     @keyframes image-slide {
         0% {
-            left: -400vw;
+            left: -340vw;
         }
         10% {
             left: 0vw;
@@ -337,28 +360,28 @@ body {
             left: 0vw;
         }
         30% {
-            left: -100vw;
+            left: -85vw;
         }
         40% {
-            left: -100vw;
+            left: -85vw;
         }
         50% {
-            left: -200vw;
+            left: -170vw;
         }
         60% {
-            left: -200vw;
+            left: -170vw;
         }
         70% {
-            left: -300vw;
+            left: -255vw;
         }
         80% {
-            left: -300vw;
+            left: -255vw;
         }
         90% {
-            left: -400vw;
+            left: -340vw;
         }
         100% {
-            left: -400vw;
+            left: -340vw;
         }
     }
 }

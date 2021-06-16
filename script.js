@@ -34,3 +34,12 @@ function changeFontSize(sign) {
     // console.log(font);
 
 }
+var loggedin=false;
+function loggedIn(){
+    if(loggedin)    return;
+    window.open("logIn.html");
+    document.getElementById("login").innerHTML="Logged In";
+    document.getElementById("login")["href='#"];
+    loggedin=true;
+    // window.close();
+}
