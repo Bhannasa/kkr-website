@@ -178,6 +178,7 @@ body {
   color: white;
   transition-property: transform;
   transition-duration: 0.5s;
+  cursor: pointer;
 }
 
 .navbar a:hover {
