@@ -1,391 +1,395 @@
 /* main {} */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 main * {
-    transition-property: transform;
-    transition-duration: 0.5s;
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
 main *:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 /* main>*:hover{
     box-shadow: 0px 0px 30px black;
 } */
-.college-name:hover{
-    box-shadow: 0px 0px 0px black;
+.college-name:hover {
+  box-shadow: 0px 0px 0px black;
 }
 
 body {
-    background-color: rgb(240, 246, 255);
-    /* background-image: url("https://tinyurl.com/nitkkrimgbg"); */
+  background-color: rgb(240, 246, 255);
+  /* background-image: url("https://tinyurl.com/nitkkrimgbg"); */
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Staatliches', cursive;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  margin: 0;
+  padding: 0;
+  font-family: "Staatliches", cursive;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
 .image-section-main {
-    width: 80vw;
-    overflow: hidden;
-    margin: 80px auto;
+  width: 80vw;
+  overflow: hidden;
+  margin: 80px auto;
 }
 
 .image-section {
-    width: 400vw;
-    display: flex;
-    position: relative;
-    /* transition: left 10s 20s; */
-    animation-name: image-slide;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+  width: 400vw;
+  display: flex;
+  position: relative;
+  /* transition: left 10s 20s; */
+  animation-name: image-slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 .images {
-    border-radius: 25px;
-    width: 80vw;
-    height: 35vw;
-    object-fit: cover;
-    /* object-position: 0% 0.01vh; */
-    /* margin: 0%; */
-    /* object-position: ; */
+  border-radius: 25px;
+  width: 80vw;
+  height: 35vw;
+  object-fit: cover;
+  /* object-position: 0% 0.01vh; */
+  /* margin: 0%; */
+  /* object-position: ; */
 }
 
 #img5 {
-    object-position: top;
+  object-position: top;
 }
 
 @keyframes image-slide {
-    0% {
-        left: -320vw;
-    }
-    10% {
-        left: 0vw;
-    }
-    20% {
-        left: 0vw;
-    }
-    30% {
-        left: -80vw;
-    }
-    40% {
-        left: -80vw;
-    }
-    50% {
-        left: -160vw;
-    }
-    60% {
-        left: -160vw;
-    }
-    70% {
-        left: -240vw;
-    }
-    80% {
-        left: -240vw;
-    }
-    90% {
-        left: -320vw;
-    }
-    100% {
-        left: -320vw;
-    }
+  0% {
+    left: -320vw;
+  }
+  10% {
+    left: 0vw;
+  }
+  20% {
+    left: 0vw;
+  }
+  30% {
+    left: -80vw;
+  }
+  40% {
+    left: -80vw;
+  }
+  50% {
+    left: -160vw;
+  }
+  60% {
+    left: -160vw;
+  }
+  70% {
+    left: -240vw;
+  }
+  80% {
+    left: -240vw;
+  }
+  90% {
+    left: -320vw;
+  }
+  100% {
+    left: -320vw;
+  }
 }
 
 .placements-and-nirf {
-    display: flex;
+  display: flex;
 }
 
 .heading {
-    /* width: 100%; */
-    flex-direction: column;
+  /* width: 100%; */
+  flex-direction: column;
 }
 
 .top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-left,
 .top-right {
-    display: flex;
-    justify-content: space-between;
-    width: 10%;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  margin: auto;
 }
 
-.top>div>.top-buttons {
-    cursor: pointer;
+.top > div > .top-buttons {
+  cursor: pointer;
 }
 
 .top,
 .footer-end {
-    background-color: thistle;
-    transition-duration: 0ms;
+  background-color: thistle;
+  transition-duration: 0ms;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
 }
 
 .top:hover,
 .footer-end:hover {
-    transform: initial;
+  transform: initial;
 }
 
-.top-right>.top-buttons {
-    border-right: 1px solid black;
+.top-right > .top-buttons {
+  border-right: 1px solid black;
 }
 
 .college-name {
-    margin: 20px;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    text-decoration: underline overline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 16px;
-    background-color: yellow;
-    /* text-decoration: ; */
+  margin: 20px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline overline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 16px;
+  background-color: yellow;
+  /* text-decoration: ; */
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
-    background-color: aquamarine;
-    font-size: 36px;
-    padding: 3px;
-    border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  background-color: aquamarine;
+  font-size: 36px;
+  padding: 3px;
+  border-radius: 40px;
 }
 
 .navbar * {
-    background-color: rgb(65, 65, 133);
-    border-radius: 20px;
-    padding: 16px;
-    width: 13.5%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    transition-property: transform;
-    transition-duration: 0.5s;
+  background-color: rgb(65, 65, 133);
+  border-radius: 20px;
+  padding: 16px;
+  width: 13.5%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
-
 .navbar a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .img-container,
 .stats,
 .onmap {
-    background-color: lightblue;
-    width: 90%;
-    margin: 80px auto;
-    padding: 15px;
-    border-radius: 15px;
+  background-color: lightblue;
+  width: 90%;
+  margin: 80px auto;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .heading {
-    font-size: 45px;
-    font-weight: 900;
-    text-align: right;
+  font-size: 45px;
+  font-weight: 900;
+  text-align: right;
 }
 
 .stats {
-    width: 80vw;
-    margin: 100px auto;
-    /* background-color: lightblue; */
-    padding: 100px;
+  width: 80vw;
+  margin: 100px auto;
+  /* background-color: lightblue; */
+  padding: 100px;
 }
 
 .placements-and-nirf {
-    display: flex;
-    justify-content: space-around;
-    font-size: 46px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 46px;
 }
 
 .pl-and-nirf-year {
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #674BBA;
-    width: 29%;
-    /* background-color: lightblue; */
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #6140c3;
+  width: 29%;
+  /* background-color: lightblue; */
 }
 
-.pl-and-nirf-year>legend {
-    color: rgb(0, 142, 189);
+.pl-and-nirf-year > legend {
+  color: rgb(0, 142, 189);
 }
 
-.pl-and-nirf-year>div {
-    color: white;
+.pl-and-nirf-year > div {
+  color: white;
 }
 
 .onmap {
-    width: 90vw;
-    align-self: center;
+  width: 90vw;
+  align-self: center;
 }
 
 .map {
-    width: 80vw;
-    height: 80vh;
-    border-radius: 10px;
-    border: 4px solid rgb(0, 47, 255);
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  border: 4px solid rgb(0, 47, 255);
 }
 
 .clgmap {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-end {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .some-lines {
-    display: flex;
-    width: 90vw;
-    margin: auto;
-    flex-direction: column;
-    background-color: lightblue;
-    border-radius: 15px;
-    /* color: lightcoral; */
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  flex-direction: column;
+  background-color: lightblue;
+  border-radius: 15px;
+  /* color: lightcoral; */
 }
 
 .some-lines-part {
-    padding: 0vw 2vw;
-    margin: 15px 3vw;
-    font-size: 30px;
-    background-color: #674BBA;
-    color: white;
-    border-radius: 15px;
-    font-weight: 200;
+  padding: 0vw 2vw;
+  margin: 15px 3vw;
+  font-size: 30px;
+  background-color: #674bba;
+  color: white;
+  border-radius: 15px;
+  font-weight: 200;
 }
 
 .some-lines-part:nth-child(1) {
-    padding: 2.5vw;
-    margin-top: 2vw;
+  padding: 2.5vw;
+  margin-top: 2vw;
 }
 
 .some-lines-part:nth-child(2) {
-    padding: 2.5vw;
-    margin-bottom: 2vw;
+  padding: 2.5vw;
+  margin-bottom: 2vw;
 }
 
 .some-lines-heading {
-    font-size: 40px;
-    font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
 }
 
-@media screen and (max-width:1150px) {
-    body {
-        width: fit-content;
-    }
-    .top {
-        display: none;
-    }
-    .navbar {
-        flex-direction: column;
-    }
-    .heading {
-        text-align: center;
-        font-size: 40px;
-    }
-    .placements-and-nirf {
-        font-size:30px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .stats {
-        width: 95vw;
-        padding:10px
-    }
-    .pl-and-nirf-year {
-        width: 90%;
-        text-align: center;
-    }
-    .college-name {
-        font-size: 50px;
-    }
-    .navbar>a{
-        width: 85%;
-        margin: 2px auto;
-        font-size: 25px;
-        padding:5px;
-    }
-    .onmap {
-        height: 120vw;
-        width: 100vw;
-    }
-    .map {
-        height: 100vw;
-        width: 100vw;
-    }
-    .image-section-main {
-        width: 85vw;
-    }
-    .image-section {
-        width: 425vw;
-    }
-    .heading,.some-lines-heading{
-        font-size: 35px;
-    }
-    .images {
-        height:80vw;
-        width: 85vw;
-    }
-    .img-container {
-        padding: 2px;
-    }
-    .some-lines{
-        width: 95%;
-    }
-    .some-lines-part{
-        font-size: 18px;
-    }
-    .footer-end{
-        font-size: 9px;
-    }
+@media screen and (max-width: 1150px) {
+  body {
+    width: fit-content;
+  }
+  .top {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .heading {
+    text-align: center;
+    font-size: 40px;
+  }
+  .placements-and-nirf {
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stats {
+    width: 95vw;
+    padding: 10px;
+  }
+  .pl-and-nirf-year {
+    width: 90%;
+    text-align: center;
+  }
+  .college-name {
+    font-size: 50px;
+  }
+  .navbar > a {
+    width: 85%;
+    margin: 2px auto;
+    font-size: 25px;
+    padding: 5px;
+  }
+  .onmap {
+    height: 120vw;
+    width: 100vw;
+  }
+  .map {
+    height: 100vw;
+    width: 100vw;
+  }
+  .image-section-main {
+    width: 85vw;
+  }
+  .image-section {
+    width: 425vw;
+  }
+  .heading,
+  .some-lines-heading {
+    font-size: 35px;
+  }
+  .images {
+    height: 80vw;
+    width: 85vw;
+  }
+  .img-container {
+    padding: 2px;
+  }
+  .some-lines {
+    width: 95%;
+  }
+  .some-lines-part {
+    font-size: 18px;
+  }
+  .footer-end {
+    font-size: 9px;
+  }
 
-    @keyframes image-slide {
-        0% {
-            left: -340vw;
-        }
-        10% {
-            left: 0vw;
-        }
-        20% {
-            left: 0vw;
-        }
-        30% {
-            left: -85vw;
-        }
-        40% {
-            left: -85vw;
-        }
-        50% {
-            left: -170vw;
-        }
-        60% {
-            left: -170vw;
-        }
-        70% {
-            left: -255vw;
-        }
-        80% {
-            left: -255vw;
-        }
-        90% {
-            left: -340vw;
-        }
-        100% {
-            left: -340vw;
-        }
+  @keyframes image-slide {
+    0% {
+      left: -340vw;
     }
+    10% {
+      left: 0vw;
+    }
+    20% {
+      left: 0vw;
+    }
+    30% {
+      left: -85vw;
+    }
+    40% {
+      left: -85vw;
+    }
+    50% {
+      left: -170vw;
+    }
+    60% {
+      left: -170vw;
+    }
+    70% {
+      left: -255vw;
+    }
+    80% {
+      left: -255vw;
+    }
+    90% {
+      left: -340vw;
+    }
+    100% {
+      left: -340vw;
+    }
+  }
 }
